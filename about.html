@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About | Dr. K Mametsa</title>
+    <meta
+      name="description"
+      content="Learn about Dr. K Mametsa, values, and approach to care."
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+           <a class="brand" href="#home" aria-label="Dr K Mametsa home">
+  <img src="assets/images/logo.png" alt="Dr K Mametsa Logo" class="brand-logo" />
+</a>
+        <button
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Toggle menu"
+        >
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+        <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="about.html" aria-current="page">About</a>
+          <a href="services.html">Services</a>
+          <a href="testimonials.html">Testimonials</a>
+          <a href="contact.html" class="btn btn-primary">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container grid-2">
+          <div>
+            <h1>About Dr. K Mametsa</h1>
+            <p>
+              Dedicated to compassionate, evidence-based healthcare. I partner
+              with every patient to understand their goals and provide clear,
+              respectful guidance at every step.
+            </p>
+            <ul class="ticks">
+              <li>General Health Check-ups & Consultations</li>
+              <li>Chronic Condition Management</li>
+              <li>Preventative Care & Wellness</li>
+              <li>Family Planning</li>
+              <li>Baby & Child Vaccinations</li>
+              <li>Male Circumcision</li>
+              <li>Termination of Pregnancy</li>
+            </ul>
+          </div>
+          <div class="photo-frame ratio-3x4 ratio-sm-4x5">
+            <img
+              src="assets/images/_DSC0033.jpg"
+              alt="Portrait of Dr. Mametse"
+              loading="lazy"
+            />
+            <!-- <figcaption class="muted">Upload your photo as `assets/images/_DSC0033.jpg`.</figcaption> -->
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div
+          class="container cards about-cards"
+          style="grid-template-columns: repeat(3, 1fr)"
+        >
+          <article class="card">
+            <div class="card-image">
+              <img
+                src="assets/images/qualifications.jpg"
+                alt="Medical qualifications"
+                loading="lazy"
+              />
+            </div>
+            <h3>Qualifications</h3>
+            <p>
+              Detail your education, certifications, and professional
+              memberships.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-image">
+              <img
+                src="assets/images/clinical-interests.jpg"
+                alt="Clinical interests"
+                loading="lazy"
+              />
+            </div>
+            <h3>Clinical Interests</h3>
+            <p>
+              Preventive care, chronic disease management, and empowering
+              healthy lifestyles.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-image">
+              <img
+                src="assets/images/community.jpg"
+                alt="Community involvement"
+                loading="lazy"
+              />
+            </div>
+            <h3>Community</h3>
+            <p>
+              Committed to accessible care and health education within the
+              community.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    
+    <footer class="site-footer">
+  <div class="container footer-inner">
+    <!-- Logo -->
+    <div class="footer-logo">
+      <img src="assets/images/logo.png" alt="Dr. K Mametsa Logo" />
+    </div>
+
+    <!-- Useful Links -->
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="footer-socials">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+
+    <!-- Copyright -->
+    <p>© <span id="year"></span> Dr. K Mametsa. All rights reserved.</p>
+
+    <!-- Back to Top -->
+    <a href="#about" class="back-to-top" aria-label="Back to top">Back to top ↑</a>
+  </div>
+</footer>
+
+
+<!-- Styling -->
+<style>
+.site-footer {
+  background: #101720;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-logo img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.footer-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: none;
+}
+
+.footer-socials a {
+  color: #fff;
+  margin: 0 8px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #9da838;
+}
+
+.back-to-top {
+  color: #808627;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+</style>
+
+<script>
+  // Auto-update year
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

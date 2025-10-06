@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Testimonials | Dr. K Mametsa</title>
+    <meta name="description" content="Patient testimonials for Dr. K Mametsa.">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+              <a class="brand" href="#home" aria-label="Dr K Mametsa home">
+  <img src="assets/images/logo.png" alt="Dr K Mametsa Logo" class="brand-logo" />
+</a>
+            <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
+            <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="testimonials.html" aria-current="page">Testimonials</a>
+                <a href="contact.html" class="btn btn-primary">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+       <section id="reviews" class="section reviews">
+        <div class="container">
+          <h2>Testimonials </h2>
+          <P>Feedback submitted by patients.</P>
+          <div class="quotes">
+            <blockquote class="quote">
+              “I’ve never felt more supported by a doctor. Dr. Mametsa listens, explains everything, and always puts patients first.”<span>— Thabo K</span>
+            </blockquote>
+            <blockquote class="quote">
+              “Thanks to Dr. Mametsa, my family and I feel healthier and more confident in managing our wellbeing.”
+              <span>— Sarah N</span>
+            </blockquote>
+            <blockquote class="quote">
+             “Dr. Mametsa truly cares. His guidance and expertise have transformed my health and given me peace of mind.”<span>— Lindiwe M</span>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+   
+    <footer class="site-footer">
+  <div class="container footer-inner">
+    <!-- Logo -->
+    <div class="footer-logo">
+      <img src="assets/images/logo.png" alt="Dr. K Mametsa Logo" />
+    </div>
+
+    <!-- Useful Links -->
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="footer-socials">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+
+    <!-- Copyright -->
+    <p>© <span id="year"></span> Dr. K Mametsa. All rights reserved.</p>
+
+    <!-- Back to Top -->
+    <a href="#testimonials" class="back-to-top" aria-label="Back to top">Back to top ↑</a>
+  </div>
+</footer>
+
+
+<!-- Styling -->
+<style>
+.site-footer {
+  background: #101720;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-logo img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.footer-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: none;
+}
+
+.footer-socials a {
+  color: #fff;
+  margin: 0 8px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #9da838;
+}
+
+.back-to-top {
+  color: #808627;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+</style>
+
+<script>
+  // Auto-update year
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
