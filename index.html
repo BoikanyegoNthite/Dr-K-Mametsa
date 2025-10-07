@@ -23,7 +23,8 @@
     <meta property="og:url" content="/" />
     <meta property="og:image" content="/assets/og-image.jpg" />
 
-    <link rel="icon" href="/assets/images/logo.png" />
+   <link rel="icon" type="image/png" href="assets/images/logo.png" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
@@ -410,5 +411,74 @@
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
     <script src="script.js"></script>
+
+      <!-- Cookie Consent Banner -->
+<div id="cookie-banner" class="cookie-banner">
+  <p>
+    🍪 This website uses cookies to ensure you get the best experience. 
+    <a href="privacy.html" style="color: #9da838; text-decoration: underline;">Learn more</a>
+  </p>
+  <button id="accept-cookies" class="btn-cookie">Accept</button>
+</div>
+
+<style>
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #101720;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  font-size: 14px;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.cookie-banner a {
+  color: #9da838;
+  text-decoration: underline;
+}
+
+.btn-cookie {
+  background: #9da838;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-cookie:hover {
+  background: #808627;
+}
+</style>
+
+<script>
+// Cookie Consent Logic
+document.addEventListener("DOMContentLoaded", () => {
+  const banner = document.getElementById("cookie-banner");
+  const acceptBtn = document.getElementById("accept-cookies");
+
+  // Check if cookie consent was already given
+  if (localStorage.getItem("cookieAccepted") === "true") {
+    banner.style.display = "none";
+  }
+
+  // When user clicks "Accept"
+  acceptBtn.addEventListener("click", () => {
+    localStorage.setItem("cookieAccepted", "true");
+    banner.style.display = "none";
+  });
+});
+</script>
+
   </body>
 </html>
